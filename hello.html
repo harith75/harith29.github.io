@@ -1,18 +1,29 @@
-<HTML>
-<HEAD>
-<TITLE>E-Mail Formulaire</TITLE>
-</HEAD>
-<BODY>
-<FORM method="POST" action="envoi.php">
-<P>Votre noom:<br>
-<INPUT type="text" name="nom" size=30>
-</p>
-<P>Votre adresse E-Mail:<br>
-<INPUT type="text" name="email" size=30>
-</p>
-<P>Message:<br>
-<textarea name="message" cols=30 rows=5></textarea>
-</p><INPUT type="submit" value="Envoyer">
-</FORM>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Your first HTML form</title>
+	</head>
+
+	<body>
+		<form action="/my-handling-form-page" method="post">
+			<ul>
+				<li>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user_name" />
+				</li>
+				<li>
+					<label for="mail">E-mail:</label>
+					<input type="email" id="mail" name="user_mail" />
+				</li>
+				<li>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				</li>
+				<li class="button">
+					<button type="submit">Send your message</button>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
